@@ -1,0 +1,117 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }  
+  
+body{
+      background-image: url(./assets/blue&green.png);
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+.container h1 {
+      font-family: Satisfy;
+      font-weight: 400;
+      text-align: center;
+      color: white;
+      font-size: 7rem;
+      display: block;
+      margin-top: 200px;
+        }
+
+.container h2 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-align: center;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 400;
+      display: block;
+        }
+
+.container p {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-align: center;
+      color: white;
+      font-size: 1rem;
+      font-weight: 400;
+      direction: rtl;
+        }
+
+.container form {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      display: flex;
+      justify-content: center;
+      text-align: right;
+      direction: rtl;
+        }
+
+.container form .formP {
+      margin: 18px;
+        }
+
+.container form input {
+      width: 440px;
+      height: 45px;
+      background-color: rgba(240, 248, 255, 0);
+      border: 2px solid white;
+      margin-top: 5px;
+        }
+
+.container form label {
+      width: 280px;
+      height: 30px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: white;
+      font-size: 1rem;
+        }
+
+.container form #butt {
+      width: 180px;
+      height: 49px;
+      margin-right: 12px; 
+      background-color: white;
+        }
+
+        
+@media (min-width:250px) and (max-width:480px) {
+  .container h1 {
+    font-size: 4rem;
+    margin-top: 140px;
+  }
+
+  .container h2 {
+    font-size: 1.5rem;
+  }
+
+  .container p{
+    font-size: 1.4rem;
+  }
+
+  .container form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container form input {
+    width: 80vw;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .container form label {
+    width: 80vw;
+  }
+  .container form #butt {
+    width: 80vw;
+    display: block;
+    color: #2823FD;
+    margin-top: 10px;
+    margin: 10px;
+    
+    }
+}
+
+        

@@ -1,0 +1,559 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  height: 45px;
+  background-color: rgba(239, 215, 233, 0.55);
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  width: 800px;
+  height: 45px;
+  background-color: rgba(239, 215, 233, 0);
+  margin: 0 auto;
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.desktop nav ul li {
+  float: right;
+}
+
+nav ul li a {
+  width: 200px;
+  display: block;
+  text-align: center;
+  color: palevioletred;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: tahoma;
+  line-height: 2.2;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: palevioletred;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgb(239, 215, 233);
+  color: palevioletred;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: tahoma;
+  line-height: 2.2;
+  width: 200px;
+  text-align: center;
+}
+
+.dropdown-menu li {
+  display: block;
+  width: 200px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.484);
+}
+
+.mobile {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.profile img {
+  width: 37px;
+  height: 37px;
+  border-radius: 20px;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 15px;
+}
+
+.profile h2 {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+  text-align: center;
+  color: palevioletred;
+  font-size: 1.3rem;
+  font-family: tahoma;
+  font-weight: 200;
+  line-height: 2.2;
+}
+
+.one {
+  width: 100%;
+  height: 170px;
+}
+
+.tik {
+  text-align: center;
+  color: palevioletred;
+  font-size: 2.5rem;
+  font-family: tahoma;
+  margin-top: 70px;
+}
+
+.welcome {
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  font-family: tahoma;
+  padding: 20px;
+}
+
+.logos {
+  width: 100%;
+  height: 70px;
+  display: block;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 10px 10px 10px rgb(239, 215, 233);
+}
+
+.logos a img {
+  height: 50px;
+  width: 50px;
+}
+
+#two {
+  width: 100%;
+  height: 260px;
+  margin-top: 50px;
+}
+
+.me {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.aboutMe {
+  text-align: center;
+  color: palevioletred;
+  font-size: 2rem;
+  font-family: tahoma;
+  margin-top: 20px;
+}
+
+.little {
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  font-family: tahoma;
+  padding: 20px;
+}
+
+.btn1 {
+  background-color: rgb(239, 215, 233);
+  width: 270px;
+  height: 45px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: palevioletred;
+  font-size: 1rem;
+  font-family: tahoma;
+  line-height: 2.3;
+  font-weight: normal;
+  border: 2px solid palevioletred;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  background-color: palevioletred;
+  color: rgb(239, 215, 233);
+  border: 2px solid rgb(239, 215, 233);
+  cursor: pointer;
+}
+
+#three {
+  width: 100%;
+  height: 1500px;
+  margin-top: 100px;
+  background-color: rgb(239, 215, 233);
+}
+
+.work {
+  text-align: center;
+  color: palevioletred;
+  font-size: 2rem;
+  font-family: tahoma;
+  padding-top: 60px;
+}
+
+.workp {
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  font-family: tahoma;
+  margin-top: 20px;
+  direction: rtl;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.worksheets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn2 {
+  background-color: rgb(239, 215, 233);
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: palevioletred;
+  font-size: 1rem;
+  font-family: tahoma;
+  font-weight: normal;
+  border: 2px solid palevioletred;
+  text-decoration: none;
+}
+
+.btn2:hover {
+  background-color: palevioletred;
+  color: rgb(239, 215, 233);
+  border: 2px solid rgb(239, 215, 233);
+  cursor: pointer;
+}
+
+div.gallery {
+  margin: 20px;
+  border: 1.5px solid palevioletred;
+  box-shadow: 4px 4px 4px palevioletred;
+  float: left;
+  width: 20vw;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+div.gallery:hover {
+  transform: translate(0, -10px);
+  transition: all 0.5s ease-in-out;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0px 0px;
+}
+
+div.desc {
+  height: 200px;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+div.desc h1 {
+  display: block;
+  margin-top: 20px;
+  font-family: tahoma;
+  color: palevioletred;
+  font-size: 1.5rem;
+}
+
+div.desc p {
+  display: block;
+  font-family: tahoma;
+  color: black;
+}
+
+#four {
+  width: 100%;
+  height: 1500px;
+  margin-top: 45px;
+  background-color: rgb(239, 215, 233);
+}
+
+#contact {
+  width: 100%;
+  height: 630px;
+  display: block;
+  text-align: right;
+  direction: rtl;
+  background-color: palevioletred;
+  margin-top: 32px;
+  padding: 30px;
+}
+
+#contact h1 {
+  color: white;
+  font-size: 2rem;
+  font-family: tahoma;
+}
+
+#contact p {
+  font-family: tahoma;
+  color: white;
+}
+
+.contactForm label {
+  font-family: tahoma;
+  color: white;
+}
+
+.contactForm input {
+  height: 5vh;
+  width: 15vw;
+  border-bottom: 4px solid rgb(239, 215, 233);
+}
+
+.btn3 {
+  background-color: rgb(239, 215, 233);
+  width: 270px;
+  height: 45px;
+  display: block;
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+  color: palevioletred;
+  font-size: 1rem;
+  font-family: tahoma;
+  font-weight: normal;
+}
+
+.btn3:hover {
+  background-color: palevioletred;
+  color: rgb(239, 215, 233);
+  cursor: pointer;
+}
+
+img.envelope {
+  display: block;
+  float: left;
+  margin-top: -125px;
+}
+
+.info {
+  width: 100%;
+  padding-top: 25px;
+  height: 70px;
+  background: rgb(239, 215, 233);
+  display: block;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: tahoma;
+}
+
+.info img {
+  height: 20px;
+  width: 20px;
+}
+
+.footer {
+  height: 6vh;
+  width: 100%;
+  background-color: palevioletred;
+  color: white;
+  font-family: tahoma;
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media (min-width: 250px) and (max-width: 480px) {
+  .desktop {
+    display: none;
+    position: absolute;
+    left: 5px;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    color: white;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .hamburger:hover .mobile {
+    display: block;
+  }
+
+  nav ul li a {
+    background-color: rgb(239, 215, 233);
+    width: 150px;
+    border: 1px solid white;
+  }
+  nav ul li a:hover {
+    background-color: rgb(239, 215, 233);
+    width: 150px;
+    border: 1px solid white;
+    color: palevioletred;
+  }
+
+  .one {
+    width: 100%;
+    height: 170px;
+  }
+
+  .tik {
+    font-size: 1.2rem;
+  }
+
+  .welcome {
+    color: black;
+    font-size: 0.7rem;
+  }
+
+  .logos {
+    width: 100vw;
+    height: 6vh;
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .logos a img {
+    height: 30px;
+    width: 30px;
+  }
+
+  #two {
+    width: 100%;
+    height: 270px;
+    margin-top: 50px;
+  }
+
+  .me {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .aboutMe {
+    font-size: 1.5rem;
+  }
+
+  .little {
+    text-align: center;
+    color: black;
+    font-size: 0.7rem;
+    font-family: tahoma;
+    padding: 20px;
+  }
+
+  .btn1 {
+    width: 150px;
+    font-size: 0.7rem;
+    height: 30px;
+    margin-top: -30px;
+  }
+
+  #three {
+    height: 500vh;
+  }
+  #four {
+    height: 500vh;
+  }
+
+  .worksheets {
+    display: block;
+    margin-left: 30px;
+  }
+
+  div.gallery {
+    width: 90%;
+    height: 52vh;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: 150px;
+  }
+
+  div.desc h1 {
+    font-size: 1.5rem;
+  }
+
+  div.desc p {
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+
+  .btn2 {
+    width: 23vw;
+    height: 5vh;
+    font-size: 1rem;
+    margin-top: 2px;
+  }
+
+  div#contact {
+    width: 100vw;
+    height: 70vh;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 20px;
+  }
+
+  #contact h1 {
+    font-size: 1.5rem;
+  }
+
+  .contactForm input {
+    width: 100%;
+  }
+
+  .btn3 {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  img.envelope {
+    display: none;
+  }
+
+  .info {
+    width: 100vw;
+    height: 15vh;
+    flex-wrap: wrap;
+    justify-content: baseline;
+  }
+
+  .info img {
+    height: 15px;
+    width: 15px;
+  }
+}
