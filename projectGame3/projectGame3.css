@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/calacgame.jpg);
+  background-size: cover;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.792);
+  max-width: 500px;
+  margin: 0 auto;
+  margin-right: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(99, 30, 30, 0.658);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(207, 136, 153);
+  font-family: "Rye", cursive;
+  margin: 5px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(70, 5, 5);
+  font-family: "Imbue", serif;
+  margin: 5px;
+}
+
+label {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: rgb(70, 5, 5);
+  font-family: "Imbue", serif;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(70, 5, 5);
+  border-radius: 10px;
+}
+
+input[type="number"] {
+  font-size: 1rem;
+  font-family: "Rye", cursive;
+  color: rgb(207, 136, 153);
+}
+
+button {
+  margin: 10px;
+  text-align: center;
+  width: 440px;
+  height: 45px;
+  padding: 10px;
+  background-color: #d78783;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  font-family: "Imbue", serif;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: rgb(245, 201, 201);
+  color: rgb(70, 5, 5);
+}
+
+#problem {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(70, 5, 5);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-family: "Rye", cursive;
+  color: rgb(207, 136, 153);
+}
+
+#userAnswer {
+  color: rgb(70, 5, 5);
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(70, 5, 5);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Imbue", serif;
+}
+#checkAnswer {
+  margin: 10px;
+  text-align: center;
+  width: 440px;
+  padding: 10px;
+  background-color: #d78783;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  font-family: "Imbue", serif;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(70, 5, 5);
+}
+
+.savedResultContainer {
+  background-color: rgb(245, 201, 201);
+  width: 300px;
+  margin: 0 auto;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(99, 30, 30, 0.658);
+}
+
+#savedResults {
+  padding: 10px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.792);
+  border-radius: 5px;
+}
+
+#savedResults p {
+  margin: 5px 0;
+  font-size: 1rem;
+  font-family: "Rye", cursive;
+}
+
+@media (min-width: 250px) and (max-width: 480px) {
+  .container-wrapper {
+    height: auto;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  input {
+    width: 250px;
+    height: 30px;
+  }
+
+  input[type="number"] {
+    font-size: 1rem;
+  }
+
+  button {
+    margin: 10px;
+    width: 230px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+
+  #problem {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  #userAnswer {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  #checkAnswer {
+    margin: 10px;
+    width: 230px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+
+  #result {
+    font-size: 1.5rem;
+  }
+
+  .savedResultContainer {
+    width: 300px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #savedResults p {
+    margin: 5px 0;
+    font-size: 1.5rem;
+  }
+}

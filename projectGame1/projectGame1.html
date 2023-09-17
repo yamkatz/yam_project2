@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./projectGame1.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Cinzel:wght@400;500&family=Comic+Neue:wght@300;400;700&family=Heebo:wght@400;700;900&family=Monoton&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="monthDisplay"></div>
+            <div>
+                <button id="backButton">Back</button>
+                <button id="nextButton">Next</button>
+            </div>
+        </div>
+        <div id="weekdays">
+            <div>Sunday</div>
+            <div>Monday</div>
+            <div>Tuseday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Friday</div>
+            <div>Saturday</div>
+        </div>
+        <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+        <h2>New Event</h2>
+        <input id="eventTitleInput" />
+        <button id="saveButton">Save</button>
+        <button id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="deleteEventModal">
+        <h2>Event</h2>
+        <p id="eventText"></p>
+        <button id="deleteButton">Delete</button>
+        <button id="closeButton">Close</button>
+    </div>
+    <div id="modalBackDrop"></div>
+
+    <script src="./projectGame1.js"></script>
+</body>
+
+</html>

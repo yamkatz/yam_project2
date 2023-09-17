@@ -1,0 +1,190 @@
+body {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  background-image: url(./assets/greenleavesbg.jpg);
+  background-size: contain;
+  background-position: center;
+  font-family: Cinzel;
+}
+
+button {
+  width: 80px;
+  cursor: pointer;
+  padding: 5px;
+  color: white;
+  font-family: Cinzel;
+}
+
+#header {
+  padding: 10px;
+  color: white;
+  font-size: 3rem;
+  font-family: Cinzel;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(11, 11, 11, 0.418);
+}
+
+#header button {
+  background-color: #00000030;
+  width: 100px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+#container {
+  width: 770px;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  background-color: rgba(11, 11, 11, 0.418);
+}
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  display: flex;
+  font-weight: 500;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day:hover {
+  background-color: rgba(130, 129, 129, 0.167);
+  color: white;
+}
+
+.day + #currentDay {
+  background-color: #4ac96aa2;
+  border-radius: 15px;
+}
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #4ac96a;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+
+#newEventModal,
+#deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: #3b9f54cc;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  font-family: Cinzel;
+  font-size: 1.5rem;
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton,
+#deleteButton {
+  background-color: #ba6161ae;
+}
+#saveButton,
+#closeButton {
+  background-color: #00000030;
+}
+#eventText {
+  font-size: 16px;
+}
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 250px) and (max-width: 480px) {
+  body {
+    background-size: contain;
+  }
+
+  #header {
+    font-size: 1.5rem;
+  }
+
+  #header button {
+    width: 100px;
+    margin: 5px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  #container {
+    margin-top: 150px;
+    width: 300px;
+    padding: 5px;
+  }
+
+  #weekdays div {
+    width: 300px;
+    padding: 2px;
+    font-size: 0.5rem;
+  }
+
+  #calendar {
+    width: 300px;
+  }
+
+  .day {
+    width: 38px;
+    padding: 3px;
+    height: 30px;
+    font-size: 0.7rem;
+    margin: 2px;
+  }
+
+  .event {
+    color: #4ac96a;
+  }
+
+  #newEventModal,
+  #deleteEventModal {
+    width: 65%;
+    left: 10%;
+    font-size: 1rem;
+  }
+}
