@@ -1,0 +1,106 @@
+body {
+  text-align: center;
+  justify-content: center;
+  background-image: url(./assets/connect4.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 15px;
+  font-family: "Bungee Spice", cursive;
+}
+
+.board-container {
+  border: 10px solid #2b0fb5;
+  background-color: #220c39e4;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: -60px;
+}
+
+.game-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  grid-gap: 15px;
+  justify-content: center;
+  padding: 15px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #2b0fb5;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.cell.empty {
+  background-color: #ccccccbb;
+}
+
+.cell.red {
+  background-color: red;
+  border-color: #7b0606;
+}
+
+.cell.yellow {
+  background-color: yellow;
+  border-color: #7b7906;
+}
+
+button#playAgainBtn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 5px;
+  background-color: #220c39e4;
+  border: 10px solid #2b0fb5;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  font-family: "Bungee Spice", cursive;
+}
+
+button#playAgainBtn:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 250px) and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .board-container {
+    border: 8px solid #2b0fb5;
+    margin-top: -20px;
+  }
+
+  .game-wrapper {
+    grid-template-columns: repeat(7, 40px);
+    grid-gap: 9px;
+    padding: 9px;
+  }
+
+  .cell {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #2b0fb5;
+    padding: 10px;
+  }
+
+  button#playAgainBtn {
+    font-size: 2rem;
+    margin-top: 20px;
+    border: 8px solid #2b0fb5;
+  }
+}
