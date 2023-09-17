@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(./asstes/gameboy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper {
+  width: 70vmin;
+  height: 80vmin;
+  padding-top: 20px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  background: #521d69c3;
+  box-shadow: 0px 10px 20px 10px rgba(35, 12, 35);
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 1.7rem;
+  font-family: "Rampart One", cursive;
+  padding: 0.2rem 1.2rem;
+  margin: 0.2rem 1.2rem;
+  border-radius: 20% 15% 20% 5%/5% 15% 25% 25%;
+  background-color: rgba(253, 122, 172, 0.614);
+}
+
+.gameDetails {
+  color: pink;
+  font-size: 1.7rem;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Amatic SC", cursive;
+}
+
+.Board {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background: rgba(208, 145, 247, 0.849);
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.Board .food {
+  background: rgb(249, 20, 253);
+}
+.Board .head {
+  background: #187cae;
+}
+
+.ctrlBtns {
+  display: none;
+  justify-content: space-between;
+}
+.ctrlBtns i {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: pink;
+  width: calc(100% / 4);
+  cursor: pointer;
+  border-right: 1px solid #171b26;
+  font-family: "Amatic SC", cursive;
+}
+
+@media (min-width: 250px) and (max-width: 480px) {
+  .wrapper {
+    width: 80vw;
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .gameDetails {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  .ctrlBtns {
+    display: flex;
+  }
+  .ctrlBtns i {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+}

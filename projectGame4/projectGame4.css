@@ -1,0 +1,76 @@
+body {
+  text-align: center;
+  align-items: center;
+  background-image: url(./assets/deesk.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Cabin Sketch", cursive;
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+.game-wrapper {
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.3rem;
+  width: 25vw;
+  height: 25vw;
+}
+.game-wrapper > div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.427);
+  border: 2px solid rgba(209, 208, 208, 0.628);
+  font-size: 3rem;
+  text-align: center;
+  line-height: 2;
+  font-family: "Permanent Marker", cursive;
+}
+#playAgainBtn {
+  background-color: #12874900;
+  height: 8vh;
+  width: 15vw;
+  border-radius: 10px;
+  font-family: "Cabin Sketch", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
+#playAgainBtn:hover {
+  background-color: rgba(255, 255, 255, 0.217);
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 250px) and (max-width: 480px) {
+  body {
+    background-repeat: repeat;
+  }
+
+  h1 {
+    margin-top: 150px;
+  }
+
+  .game-wrapper {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .game-wrapper > div {
+    font-size: 2rem;
+  }
+
+  #playAgainBtn {
+    height: 10vh;
+    width: 50vw;
+    margin-bottom: 100px;
+  }
+}
