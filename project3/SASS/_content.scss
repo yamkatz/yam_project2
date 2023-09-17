@@ -1,0 +1,25 @@
+.bg{
+    width: 100vw;
+    height: 70vh;
+}
+
+h1{
+    color: $yellowC;
+    font-size: $bigsize;
+    font-weight: bold;
+    font-family: Assistant;
+    text-align: center;
+}
+
+p{
+    color: $whiteC;
+    font-size: $regularsize;
+    font-weight: 500;
+    font-family: Assistant;
+    text-align: center;
+    direction: rtl;
+}
+
+.header{
+    margin-top: -50vh;
+}

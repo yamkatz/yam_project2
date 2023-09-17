@@ -1,0 +1,42 @@
+@media (min-width:250px) and (max-width:480px){
+    .bg{
+        width: 100vw;
+        height: 45vh;
+    }
+    
+    .header{
+        margin-top: -35vh;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+
+    h1{
+        font-size: $mobileBigsize;
+    }
+
+    p{
+        font-size: $mobileRegularsize;
+    }
+
+    form {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin-top: 30vh;
+
+    div{
+    display: flex;
+    flex-direction: column;
+        }
+
+    input { 
+    width: 80vw;
+    margin-bottom: 20px;
+        }
+
+    .btn {
+    width: 80vw;
+    }
+}
+
+}
